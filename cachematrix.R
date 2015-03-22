@@ -48,7 +48,7 @@ cacheSolve <- function(acmatrix, ...) {
             return(inverseCheck)
       }
       data <- acmatrix$get()
-      inverseCheck <- solve(data) %*% data
+      inverseCheck <- solve(data)
       acmatrix$setInverse(inverseCheck)
       inverseCheck
 }
